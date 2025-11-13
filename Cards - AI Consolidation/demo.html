@@ -156,9 +156,57 @@
         font-weight: 700;
         color: #0063e6;
       }
+
+      .nav-bar {
+        background: #fff;
+        border-bottom: 1px solid #e6e6e6;
+        padding: 16px 24px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .nav-button {
+        padding: 8px 16px;
+        border: 1px solid #ccc;
+        background: #fff;
+        color: #1a1a1a;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s;
+        font-family: 'Source Sans 3', sans-serif;
+      }
+
+      .nav-button:hover {
+        background: #f0f6ff;
+        border-color: #0063e6;
+        color: #0063e6;
+      }
+
+      .nav-button.active {
+        background: #0063e6;
+        color: #fff;
+        border-color: #0063e6;
+      }
+
+      .nav-button.active:hover {
+        background: #0052cc;
+        border-color: #0052cc;
+      }
     </style>
   </head>
   <body>
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="demo.html" class="nav-button active">Interactive Demo</a>
+      <a href="showcase.html" class="nav-button">All Cards</a>
+    </nav>
     <div class="demo-wrapper">
       <div class="demo-header">
         <h1 class="demo-title">Card Design System</h1>
