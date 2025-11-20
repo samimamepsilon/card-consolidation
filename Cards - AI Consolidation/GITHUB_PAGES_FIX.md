@@ -94,3 +94,4 @@ Once you push, your site should be available at:
 **Status**: All local changes committed ✅  
 **Next**: Push to GitHub and verify Pages settings
 
+
